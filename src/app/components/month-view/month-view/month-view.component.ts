@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MonthDateService } from 'src/app/services/month/month-date.service';
 
 @Component({
   selector: 'app-month-view',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MonthViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private monthDate : MonthDateService
+  ) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
+
+  
 
 }
