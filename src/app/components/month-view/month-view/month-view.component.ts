@@ -7,13 +7,18 @@ import { MonthDateService } from 'src/app/services/month/month-date.service';
   styleUrls: ['./month-view.component.css']
 })
 export class MonthViewComponent implements OnInit {
+  tempDay: string = "";
 
   constructor(
     private monthDate : MonthDateService
   ) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    //months start at 0
+    this.monthDate.getFirstDay(2021, 6);
+    this.tempDay = this.monthDate.firstDate;
+  }
 
-  
+
 
 }
