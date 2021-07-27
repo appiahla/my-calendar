@@ -1,21 +1,26 @@
+<head>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Josefin+Sans">
+
+</head>
 <header>
-  <nav>
-    <div>
-      <a [routerLink]="['/']">Home</a>
+  <nav class="nav-bar" >
+    <div style="display: flex; justify-content: space-between;">
+      <a [routerLink]="['/']" id="home-pic">Home-Placeholder</a>
       <div
-        class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
-        [ngClass]="{ show: isExpanded }"
-      >
-        <ul>
-          <li [routerLinkActive]="['link-active']">
+        [ngClass]="{ show: isExpanded }">
+        <ul class="list">
+          <li class="list-item" [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/']">Home</a>
+          </li>
+          <li class="list-item" [routerLinkActive]="['link-active']">
             <a [routerLink]="['/year-view']">Year</a>
-        </li>
-        <li [routerLinkActive]="['link-active']">
-          <a [routerLink]="['/month-view']">Month</a>
-      </li>
-      <li [routerLinkActive]="['link-active']">
-        <a [routerLink]="['/day-view']">Day</a>
-    </li>
+          </li>
+          <li class="list-item" [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/month-view']">Month</a>
+          </li>
+          <li class="list-item" [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/day-view']">Day</a>
+          </li>
         </ul>
       </div>
     </div>
