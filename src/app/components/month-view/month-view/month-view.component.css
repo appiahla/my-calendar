@@ -1,0 +1,17 @@
+.calendar {
+  border: 2px solid black;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.month-indicator {
+	border: 2px solid red;
+}
+
+.day-of-week {
+	border: 2px solid blue;
+}
+
+.date-grid {
+	border: 2px solid green;
+}

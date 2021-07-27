@@ -1,41 +1,23 @@
+
 <header>
-  <nav
-    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3"
-  >
-    <div class="container">
-      <a class="navbar-brand" [routerLink]="['/']">Home</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target=".navbar-collapse"
-        aria-label="Toggle navigation"
-        [attr.aria-expanded]="isExpanded"
-        (click)="toggle()"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="nav-bar" >
+    <div style="display: flex; justify-content: space-between;">
+      <a [routerLink]="['/']" id="home-pic">Home-Placeholder</a>
       <div
-        class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
-        [ngClass]="{ show: isExpanded }"
-      >
-        <ul class="navbar-nav flex-grow">
-          <!-- <li
-            class="nav-item"
-            [routerLinkActive]="['link-active']"
-            [routerLinkActiveOptions]="{ exact: true }"
-          >
-            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
-          </li> -->
-          <li class="nav-item" [routerLinkActive]="['link-active']">
-            <a class="nav-link text-dark" [routerLink]="['/year-view']">Year</a>
-        </li>
-        <li class="nav-item" [routerLinkActive]="['link-active']">
-          <a class="nav-link text-dark" [routerLink]="['/month-view']">Month</a>
-      </li>
-      <li class="nav-item" [routerLinkActive]="['link-active']">
-        <a class="nav-link text-dark" [routerLink]="['/day-view']">Day</a>
-    </li>
+        [ngClass]="{ show: isExpanded }">
+        <ul class="list">
+          <li class="list-item" [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/']">Home</a>
+          </li>
+          <li class="list-item" [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/year-view']">Year</a>
+          </li>
+          <li class="list-item" [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/month-view']">Month</a>
+          </li>
+          <li class="list-item" [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/day-view']">Day</a>
+          </li>
         </ul>
       </div>
     </div>
