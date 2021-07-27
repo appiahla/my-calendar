@@ -24,7 +24,10 @@ import { HomeComponent } from './components/home/home/home.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' }
+      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'year-view', component: YearViewComponent },
+      { path: 'month-view', component: MonthViewComponent },
+      { path: 'day-view', component: DayViewComponent }
     ])
   ],
   providers: [],
