@@ -8,6 +8,8 @@ import { MonthDateService } from 'src/app/services/month/month-date.service';
 })
 export class MonthViewComponent implements OnInit {
   tempDay: string = "";
+  todayMonth: string = "";
+  days: string[] = [];
 
   constructor(
     private monthDate : MonthDateService
@@ -16,7 +18,11 @@ export class MonthViewComponent implements OnInit {
   ngOnInit(): void {
     //months start at 0
     this.monthDate.getFirstDay(2021, 6);
-    this.tempDay = this.monthDate.firstDate;
+    this.tempDay = this.monthDate.firstDate[0];
+    this.todayMonth = this.monthDate.todayMonth;
+    this.monthDate.displayFirstDay(6);
+    this.days = this.monthDate.days;
+
   }
 
 
