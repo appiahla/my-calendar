@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  height: 800px;
+  flex-direction: column;
+  align-content: center;
+  margin: 10px;
+}
+
+#year-display {
+  font-size: 3vw;
+  text-align: center;
+}
+
+
+#month-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(25px, auto));
+  grid-template-rows: repeat(3, minmax(25px, 150px));
+  justify-content: center;
+  margin: auto;
+  column-gap: 60px;
+  row-gap: 100px;
+}
+
+.month-names {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  color: purple;
+  cursor: pointer;
+}
