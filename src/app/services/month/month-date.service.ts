@@ -31,21 +31,21 @@ export class MonthDateService {
 
   displayFirstDay(yearNum: number, monthNum: number) {
     this.getFirstDay(yearNum, monthNum);
+    this.days.length = 0;
     let i = -1, j = 0, count = 0;
+    
     while (i < this.firstDate[1]) {
       this.days[j] = "";
       i++;
       j++;
       count++;
     }
-    // console.log(count);
     j = 1;
 
     for (let k = this.firstDate[1]; k < this.monthLenghts[monthNum]+(count-1); k++) {
       this.days[k] = j.toString();
       j++;
     }
-    // console.log(this.days);
 
     let len = this.days.length;
     for (let l = len; l <= 42; l++) {
