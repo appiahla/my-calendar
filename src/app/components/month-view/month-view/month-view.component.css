@@ -1,17 +1,52 @@
 .calendar {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin-top: 30px;
   text-align: center;
+  height: 750px;
 }
 
 .month-indicator {
-	border: 2px solid red;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .day-of-week {
-	border: 2px solid blue;
+	/* border: 2px solid blue; */
+  display: grid;
+  grid-template-columns: repeat(7, minmax(25px, 100px));
+  margin: 10px;
+  font-size: 1vw;
+  justify-content: center;
+  color: purple;
 }
 
 .date-grid {
-	border: 2px solid green;
+	/* border: 2px solid green; */
+  display: grid;
+  grid-template-columns: repeat(7, minmax(25px, 100px));
+  grid-template-rows: repeat(6, minmax(25px, 100px));
+  justify-content: center;
 }
+
+.grid-day {
+  display: inline-flex;
+  outline: 1px solid black;
+  justify-content: flex-end;
+  padding: 2px;
+  color: purple;
+  font-size: 1vw;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 4vw;
+  align-items: center;
+}
+
+#month-title {
+  width: 50%;
+  color: purple;
+}
+

@@ -1,9 +1,39 @@
 <div class="calendar">
   <div class="month-indicator">
-    <h1>Month</h1>
+    <div class="arrows" (click)="decreaseMonth()">&lt;</div>
+    <div id="month-title"><h1>{{ todayMonth }} {{ yearNumber }}</h1></div>
+    <div class="arrows" (click)="increaseMonth()">&gt;</div>
   </div>
   <div class="day-of-week">
-    <h1>Day of the Week</h1>
+    <div>Sunday</div>
+    <div>Monday</div>
+    <div>Tuesday</div>
+    <div>Wednesday</div>
+    <div>Thursday</div>
+    <div>Friday</div>
+    <div>Saturday</div>
   </div>
-  <div class="date-grid"> Date Grid </div>
+  <div class="date-grid">
+    <div class="grid-day">{{ days[0] }}</div><div class="grid-day">{{ days[1] }}</div>
+    <div class="grid-day">{{ days[2] }}</div><div class="grid-day">{{ days[3] }}</div>
+    <div class="grid-day">{{ days[4] }}</div><div class="grid-day">{{ days[5] }}</div>
+    <div class="grid-day">{{ days[6] }}</div><div class="grid-day">{{ days[7] }}</div>
+    <div class="grid-day">{{ days[8] }}</div><div class="grid-day">{{ days[9] }}</div>
+    <div class="grid-day">{{ days[10] }}</div><div class="grid-day">{{ days[11] }}</div>
+    <div class="grid-day">{{ days[12] }}</div><div class="grid-day">{{ days[13] }}</div>
+    <div class="grid-day">{{ days[14] }}</div><div class="grid-day">{{ days[15] }}</div>
+    <div class="grid-day">{{ days[16] }}</div><div class="grid-day">{{ days[17] }}</div>
+    <div class="grid-day">{{ days[18] }}</div><div class="grid-day">{{ days[19] }}</div>
+    <div class="grid-day">{{ days[20] }}</div><div class="grid-day">{{ days[21] }}</div>
+    <div class="grid-day">{{ days[22] }}</div><div class="grid-day">{{ days[23] }}</div>
+    <div class="grid-day">{{ days[24] }}</div><div class="grid-day">{{ days[25] }}</div>
+    <div class="grid-day">{{ days[26] }}</div><div class="grid-day">{{ days[27] }}</div>
+    <div class="grid-day">{{ days[28] }}</div><div class="grid-day">{{ days[29] }}</div>
+    <div class="grid-day">{{ days[30] }}</div><div class="grid-day">{{ days[31] }}</div>
+    <div class="grid-day">{{ days[32] }}</div><div class="grid-day">{{ days[33] }}</div>
+    <div class="grid-day">{{ days[34] }}</div><div class="grid-day">{{ days[35] }}</div>
+    <div class="grid-day">{{ days[36] }}</div><div class="grid-day">{{ days[37] }}</div>
+    <div class="grid-day">{{ days[38] }}</div><div class="grid-day">{{ days[39] }}</div>
+    <div class="grid-day">{{ days[40] }}</div><div class="grid-day">{{ days[41] }}</div>
+  </div>
 </div>
