@@ -18,6 +18,7 @@ export class MonthViewComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.monthDate.checkLeapYear(this.yearNumber);
     //months start at 0
     this.checkMonthNum();
     this.monthDate.displayFirstDay(this.yearNumber, this.monthNumber);

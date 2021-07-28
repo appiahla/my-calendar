@@ -30,10 +30,12 @@ export class MonthDateService {
   }
 
   displayFirstDay(yearNum: number, monthNum: number) {
+    console.log(yearNum);
+    this.checkLeapYear(yearNum);
     this.getFirstDay(yearNum, monthNum);
     this.days.length = 0;
     let i = -1, j = 0, count = 0;
-    
+
     while (i < this.firstDate[1]) {
       this.days[j] = "";
       i++;
@@ -50,7 +52,13 @@ export class MonthDateService {
     let len = this.days.length;
     for (let l = len; l <= 42; l++) {
       this.days[l] = "";
-
     }
+  }
+
+  checkLeapYear(year: number) {
+    // console.log(year);
+    if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) {
+      this.monthLenghts[1] = 29;
+    } else { this.monthLenghts[1] = 28; }
   }
 }
