@@ -19,7 +19,6 @@ export class MonthViewComponent implements OnInit {
 
   ngOnInit(): void {
     //months start at 0
-    // this.monthDate.getFirstDay(2021, this.monthNumber);
     this.checkMonthNum();
     this.monthDate.displayFirstDay(this.yearNumber, this.monthNumber);
     this.tempDay = this.monthDate.firstDate[0];
@@ -27,27 +26,30 @@ export class MonthViewComponent implements OnInit {
     this.days = this.monthDate.days;
   }
 
-  //month doesn't display past december
   increaseMonth() {
     this.monthNumber++;
-    this.checkMonthNum();
-    this.monthDate.displayFirstDay(this.yearNumber, this.monthNumber);
-    this.todayMonth = this.monthDate.todayMonth;
-    // console.log(this.monthNumber);
+    this.changeMonthDisplay();
   }
 
   decreaseMonth() {
     this.monthNumber--;
+    this.changeMonthDisplay();
+  }
+
+  changeMonthDisplay() {
     this.checkMonthNum();
     this.monthDate.displayFirstDay(this.yearNumber, this.monthNumber);
     this.todayMonth = this.monthDate.todayMonth;
-    // console.log(this.monthNumber);
   }
 
   checkMonthNum() {
     if (this.monthNumber > 11) {
       this.monthNumber = 0;
       this.yearNumber++;
+    } else if (this.monthNumber < 0) {
+      console.log(this.monthNumber)
+      this.monthNumber = 11;
+      this.yearNumber--;
     }
   }
 }
