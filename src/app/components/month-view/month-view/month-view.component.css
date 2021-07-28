@@ -5,8 +5,10 @@
   height: 750px;
 }
 
-/* .month-indicator {
-} */
+.month-indicator {
+  display: flex;
+  justify-content: space-between;
+}
 
 .day-of-week {
 	/* border: 2px solid blue; */
@@ -32,6 +34,10 @@
   padding: 2px;
   color: purple;
   font-size: 1vw;
+}
+
+.arrows {
+  cursor: pointer;
 }
 
 

@@ -1,6 +1,8 @@
 <div class="calendar">
   <div class="month-indicator">
-    <h1>{{ todayMonth }}</h1>
+    <div class="arrows" (click)="decreaseMonth()"><h1>&lt;</h1></div>
+    <div id="month-title"><h1>{{ todayMonth }}</h1></div>
+    <div class="arrows" (click)="increaseMonth()"><h1>&gt;</h1></div>
   </div>
   <div class="day-of-week">
     <div>Sunday</div>

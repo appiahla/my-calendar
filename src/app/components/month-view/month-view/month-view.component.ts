@@ -10,6 +10,8 @@ export class MonthViewComponent implements OnInit {
   tempDay: string = "";
   todayMonth: string = "";
   days: string[] = [];
+  monthNumber: number = 11;
+  yearNumber: number = 2021;
 
   constructor(
     private monthDate : MonthDateService
@@ -17,12 +19,25 @@ export class MonthViewComponent implements OnInit {
 
   ngOnInit(): void {
     //months start at 0
-    this.monthDate.getFirstDay(2021, 6);
+    // this.monthDate.getFirstDay(2021, this.monthNumber);
+    this.monthDate.displayFirstDay(this.yearNumber, this.monthNumber);
     this.tempDay = this.monthDate.firstDate[0];
     this.todayMonth = this.monthDate.todayMonth;
-    this.monthDate.displayFirstDay(6);
     this.days = this.monthDate.days;
+  }
 
+  increaseMonth() {
+    this.monthNumber++;
+    this.monthDate.displayFirstDay(this.yearNumber, this.monthNumber);
+    this.todayMonth = this.monthDate.todayMonth;
+    // console.log(this.monthNumber);
+  }
+
+  decreaseMonth() {
+    this.monthNumber--;
+    this.monthDate.displayFirstDay(this.yearNumber, this.monthNumber);
+    this.todayMonth = this.monthDate.todayMonth;
+    // console.log(this.monthNumber);
   }
 
 
