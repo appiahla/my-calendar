@@ -1,1 +1,11 @@
-<p>year-view works!</p>
+<div class="container">
+  <div id="year-display">{{ year }}</div>
+  <div id="month-grid">
+    <div class="month-names" (click)="displayMonth(0)">January</div><div class="month-names" (click)="displayMonth(1)">February</div>
+    <div class="month-names" (click)="displayMonth(2)">March</div><div class="month-names" (click)="displayMonth(3)">April</div>
+    <div class="month-names" (click)="displayMonth(4)">May</div><div class="month-names" (click)="displayMonth(5)">June</div>
+    <div class="month-names" (click)="displayMonth(6)">July</div><div class="month-names" (click)="displayMonth(7)">August</div>
+    <div class="month-names" (click)="displayMonth(8)">September</div><div class="month-names" (click)="displayMonth(9)">October</div>
+    <div class="month-names" (click)="displayMonth(10)">November</div><div class="month-names" (click)="displayMonth(11)">December</div>
+  </div>
+</div>
