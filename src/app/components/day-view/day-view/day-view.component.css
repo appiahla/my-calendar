@@ -1,0 +1,29 @@
+#day-view-container {
+  outline: 2px solid black;
+  height: 700px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+#assignment-list {
+  outline: 2px solid red;
+  height: 40px;
+  width: auto;
+
+}
+
+#schedule {
+  outline: 2px solid blue;
+  height: 40px;
+  width: auto;
+
+}
+
+#todo-list {
+  outline: 2px solid green;
+  height: 40px;
+  width: auto;
+}
+
+
