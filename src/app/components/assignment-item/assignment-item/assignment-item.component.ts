@@ -15,7 +15,7 @@ export class AssignmentItemComponent implements OnInit {
 
   ngOnInit(): void {
     this.temp[0] = assignment1;
-    // this.temp[1] = assignment2;
+    this.temp[1] = assignment2;
   }
 
 }
