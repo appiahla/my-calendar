@@ -3,11 +3,27 @@ export class Assignment {
   title: string;
   notes: string[];
 
-  constructor(due: string, title: string, notes: string[]) {
-    this.due = due;
-    this.title = title;
-    this.notes = notes;
+  public constructor(due?: string, title?: string, notes?: string[]) {
+    this.due = due || "";
+    this.title = title || "";
+    this.notes = notes || [];
   }
+
+  toString() {
+    return "Title: " + this.title + " Due: " + this.due + " Notes";
+  }
+
+  // getTitle() {
+  //   return this.title;
+  // }
+
+  // getDueDate() {
+  //   return this.due;
+  // }
+
+  // getNotes() {
+  //   return this.notes;
+  // }
 }
 
 
