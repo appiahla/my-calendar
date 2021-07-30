@@ -10,6 +10,7 @@ import { MonthViewComponent } from './components/month-view/month-view/month-vie
 import { DayViewComponent } from './components/day-view/day-view/day-view.component';
 import { YearViewComponent } from './components/year-view/year-view/year-view.component';
 import { HomeComponent } from './components/home/home/home.component';
+import { AssignmentListComponent } from './components/assignment-list/assignment-list/assignment-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './components/home/home/home.component';
     MonthViewComponent,
     DayViewComponent,
     YearViewComponent,
-    HomeComponent
+    HomeComponent,
+    AssignmentListComponent
   ],
   imports: [
     BrowserModule,
