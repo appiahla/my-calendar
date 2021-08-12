@@ -6,13 +6,15 @@ export class Class {
   professor: string;
   schedule: Schedule;
   assignmentList: Assignment;//[];
+  location: string
 
-  constructor(color: string, name: string, professor: string, schedule: Schedule, assignments: Assignment) {
+  constructor(color: string, name: string, professor: string, schedule: Schedule, assignments: Assignment, location: string) {
     this.color = color;
     this.name = name;
     this.professor = professor;
     this.schedule = schedule;
     this.assignmentList = assignments;
+    this.location = location;
   }
 }
 
@@ -42,9 +44,15 @@ export const classes: Array<Class> = [
     name: "Programming Languages",
     professor: "Shepherd",
     assignmentList: new Assignment(),
-    schedule: new Schedule('', '12pm-6pm', '', '', '', '', '')
+    schedule: new Schedule('', '12pm-6pm', '', '', '', '', ''),
+    location: "this-place"
+  },
+  {
+    color: "purple",
+    name: "Introduction to German",
+    professor: "name1",
+    assignmentList: new Assignment(),
+    schedule: new Schedule('', '', '', 'this-time','','',''),
+    location: "this-new-place"
   }
 ];
-
-// classes[0].schedule.monday = "12pm-4pm";
-// classes[0].schedule.wednesday = "4-6pm";

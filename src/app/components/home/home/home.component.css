@@ -1,13 +1,14 @@
 .home-group {
   border: solid 1px purple;
   width: 400px;
-  text-align: center;
+  /* text-align: center; */
   box-shadow: 5px 5px 5px 1px #cccccc;
 }
 
 .home-title {
   border-bottom: 1px solid black;
   padding-bottom: 14px;
+  text-align: center;
 }
 
 #home-group-flex {
