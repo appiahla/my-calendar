@@ -11,6 +11,7 @@ import { DayViewComponent } from './components/day-view/day-view/day-view.compon
 import { YearViewComponent } from './components/year-view/year-view/year-view.component';
 import { HomeComponent } from './components/home/home/home.component';
 import { AssignmentItemComponent } from './components/assignment-item/assignment-item/assignment-item.component';
+import { ClassViewComponent } from './components/class-view/class-view/class-view.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AssignmentItemComponent } from './components/assignment-item/assignment
     DayViewComponent,
     YearViewComponent,
     HomeComponent,
-    AssignmentItemComponent
+    AssignmentItemComponent,
+    ClassViewComponent
   ],
   imports: [
     BrowserModule,
