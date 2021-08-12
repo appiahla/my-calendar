@@ -2,10 +2,15 @@
   border: solid 1px purple;
   width: 400px;
   text-align: center;
+  box-shadow: 5px 5px 5px 1px #cccccc;
+}
+
+.home-title {
+  border-bottom: 1px solid black;
+  padding-bottom: 14px;
 }
 
 #home-group-flex {
-  border: black solid 1px;
   display: flex;
   justify-content: space-between;
   height: 80vh;
