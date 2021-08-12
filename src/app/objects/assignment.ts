@@ -42,3 +42,12 @@ export const assignment2 = new Assignment(
     "hard assignment",
     "ask tabbi to work together"
   ]  );
+
+export const assignment3 = new Assignment(
+  "08/26/2021",
+  "Partner Project",
+  [
+    "need to find new partner",
+    "make sure to write the plan before starting the individual parts of the project"
+  ]
+)

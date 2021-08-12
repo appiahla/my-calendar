@@ -1,6 +1,20 @@
+<h2 id="title">Assignments:</h2>
 <div id="assignment-details">
-  <div id="title">{{ temp[0].title }}</div>
-  <div id="due-date">{{ temp[0].due }}</div>
-  <div id="notes">{{ temp[0].notes }}</div>
+  <div *ngFor="let item of temp">
+
+    <div id="assignment-title">{{ item.title }}</div>
+
+    <div id="due-date">
+    <span class="section-header">Due:</span>
+      {{ item.due }}
+    </div>
+
+    <div id="notes-section">
+      <span class="section-header">Notes:</span>
+      <div id="notes" *ngFor="let note of item.notes">
+        <li>{{ note }}</li>
+      </div>
+    </div>
+  </div>
 </div>
 
