@@ -1,0 +1,10 @@
+#class-view-flex {
+  margin: 3px;
+  outline: rgb(230, 113, 132) solid 2px;
+  height: 70vh;
+}
+
+.class-name {
+  background-color: lavender;
+  text-align: center;
+}

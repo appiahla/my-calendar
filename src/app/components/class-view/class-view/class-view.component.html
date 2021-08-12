@@ -1,1 +1,6 @@
-<p>class-view works!</p>
+<div id="class-view-flex">
+  <div class="class" *ngFor="let item of classList">
+    <h4 class="class-name">{{ item.name }}</h4>
+    <li>{{ item.color }}</li>
+  </div>
+</div>
