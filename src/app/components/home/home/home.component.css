@@ -1,0 +1,13 @@
+.home-group {
+  border: solid 1px purple;
+  width: 400px;
+  text-align: center;
+}
+
+#home-group-flex {
+  border: black solid 1px;
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  margin: 0px;
+}
