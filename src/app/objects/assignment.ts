@@ -26,28 +26,26 @@ export class Assignment {
   // }
 }
 
-
-export const assignment1 = new Assignment(
-  "07/30/2021",
-  "Chapter 1 Notes",
-  [
-    "simple assignment",
-    "ask tabbi to work together"
-  ]  );
-
-export const assignment2 = new Assignment(
-  "08/30/2021",
-  "Chapter 5 Notes",
-  [
-    "hard assignment",
-    "ask tabbi to work together"
-  ]  );
-
-export const assignment3 = new Assignment(
-  "08/26/2021",
-  "Partner Project",
-  [
-    "need to find new partner",
-    "make sure to write the plan before starting the individual parts of the project"
-  ]
-)
+export const assignments: Array<Assignment> = [
+  { due: '07/30/2021',
+    title: 'Chapter 1 Notes',
+    notes: [
+      'simple assignment',
+      'ask tabbi to work together'
+    ]
+  },
+  { due: "08/30/2021",
+    title: "Chapter 5 Notes",
+    notes: [
+      "hard assignment",
+      "ask tabbi to work together"
+    ]
+  },
+  { due: "08/26/2021",
+    title: "Partner Project",
+    notes: [
+      "need to find new partner",
+      "make sure to write the plan before starting the individual parts of the project"
+    ]
+  }
+];
