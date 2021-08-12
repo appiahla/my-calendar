@@ -6,7 +6,7 @@ export class Class {
   professor: string;
   schedule: Schedule;
   assignmentList: Assignment;//[];
-  location: string
+  location: string;
 
   constructor(color: string, name: string, professor: string, schedule: Schedule, assignments: Assignment, location: string) {
     this.color = color;
