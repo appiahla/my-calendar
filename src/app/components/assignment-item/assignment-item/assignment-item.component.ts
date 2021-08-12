@@ -12,8 +12,6 @@ export class AssignmentItemComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    // this.temp = assignments;
-  }
+  ngOnInit(): void { }
 
 }

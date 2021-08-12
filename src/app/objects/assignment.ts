@@ -8,40 +8,27 @@ export class Assignment {
     this.title = title || "";
     this.notes = notes || [];
   }
-
-  toString() {
-    return "Title: " + this.title + " Due: " + this.due + " Notes";
-  }
-
-  // getTitle() {
-  //   return this.title;
-  // }
-
-  // getDueDate() {
-  //   return this.due;
-  // }
-
-  // getNotes() {
-  //   return this.notes;
-  // }
 }
 
 export const assignments: Array<Assignment> = [
-  { due: '07/30/2021',
+  {
+    due: '07/30/2021',
     title: 'Chapter 1 Notes',
     notes: [
       'simple assignment',
       'ask tabbi to work together'
     ]
   },
-  { due: "08/30/2021",
+  {
+    due: "08/30/2021",
     title: "Chapter 5 Notes",
     notes: [
-      "hard assignment",
+      "18 pages",
       "ask tabbi to work together"
     ]
   },
-  { due: "08/26/2021",
+  {
+    due: "08/26/2021",
     title: "Partner Project",
     notes: [
       "need to find new partner",
