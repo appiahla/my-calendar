@@ -8,12 +8,12 @@ import { Assignment } from 'src/app/objects/assignment';
   styleUrls: ['./assignment-item.component.css']
 })
 export class AssignmentItemComponent implements OnInit {
-  temp: Assignment[] = [];
+  temp: Assignment[] = assignments;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.temp = assignments;
+    // this.temp = assignments;
   }
 
 }
