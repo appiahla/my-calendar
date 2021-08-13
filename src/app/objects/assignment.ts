@@ -1,7 +1,7 @@
 export class Assignment {
-  due: string;
-  title: string;
-  notes: string[];
+  due: string = '';
+  title: string = '';
+  notes: string[] = [];
 
   public constructor(due?: string, title?: string, notes?: string[]) {
     this.due = due || "";
