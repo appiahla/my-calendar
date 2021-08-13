@@ -1,6 +1,6 @@
-import { classes } from './../../../objects/class';
+// import { classes } from './../../../objects/class';
 import { Component, OnInit } from '@angular/core';
-import { Class } from 'src/app/objects/class';
+import { Class, classes } from 'src/app/objects/class';
 
 @Component({
   selector: 'app-class-view',

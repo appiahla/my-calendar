@@ -1,1 +1,16 @@
-<p>class-view works!</p>
+<div id="class-view-flex">
+  <div class="class" *ngFor="let item of classList">
+    <h4 class="class-name">{{ item.name }}</h4>
+    <li>{{ item.color }}</li>
+    <li>{{ item.professor }}</li>
+    <li>{{ item.location }}</li>
+    <li>This is the place for schedules
+      <!-- <div *ngFor="let schedule of item.schedule">
+        {{schedule[monday]}}
+      </div> -->
+    </li>
+    <li>
+      <!-- {{ item.assignmentList.title}} --> This is the place for assignments
+    </li>
+  </div>
+</div>

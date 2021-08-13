@@ -1,6 +1,6 @@
-import { assignments } from './../../../objects/assignment';
+// import { assignments } from './../../../objects/assignment';
 import { Component, OnInit } from '@angular/core';
-import { Assignment } from 'src/app/objects/assignment';
+import { Assignment, assignments } from 'src/app/objects/assignment';
 
 @Component({
   selector: 'app-assignment-item',

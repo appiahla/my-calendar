@@ -6,7 +6,7 @@ export class Class {
   professor: string;
   schedule: Schedule;
   assignmentList: Assignment;//[];
-  location: string
+  location: string;
 
   constructor(color: string, name: string, professor: string, schedule: Schedule, assignments: Assignment, location: string) {
     this.color = color;
@@ -18,7 +18,7 @@ export class Class {
   }
 }
 
-export class Schedule {
+export class Schedule implements Iterable<String>{
   sunday: string = '';
   monday: string = '';
   tuesday: string = '';
@@ -35,6 +35,12 @@ export class Schedule {
     this.thursday = thursday || '';
     this.friday = friday || '';
     this.saturday = saturday || '';
+  }
+
+  *[Symbol.iterator](): Iterator<string> {
+    for (let key of Object.keys(this)) {
+        yield key;
+    }
   }
 }
 

@@ -13,15 +13,15 @@
 #assignment-list {
   display: flex;
   flex-direction: column;
-  outline: 2px solid red;
+  outline: 2px solid rgb(211, 206, 206);
 }
 
 #schedule {
-  outline: 2px solid blue;
+  outline: 2px solid rgb(211, 206, 206);
 }
 
 #todo-list {
-  outline: 2px solid green;
+  outline: 2px solid rgb(211, 206, 206);
 }
 
 #assignment-list, #schedule, #todo-list {
